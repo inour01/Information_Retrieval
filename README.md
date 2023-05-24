@@ -11,7 +11,7 @@ Then in your IDE of choice run the python program, it will produce two documents
 
 
 
-Functionality
+
 Step 1 – Preprocessing:
 Preprocess is a function defined in our code that accepts a single document as input. The function extracts the text from the input document in between the TEXT and TEXT tags using regular expressions. The nltk.word tokenize() function is then used to tokenize the extracted text. The non-alphabetic tokens are eliminated, and the remaining tokens are all changed to lowercase. The code then reads the file "stopwords.txt" in read-only mode, splits the file's lines to produce a set of custom stopwords, and then deletes tokens from the list of tokens that are in the set of custom stopwords. The function returns the list of stemmed tokens after creating an instance of the Porter Stemmer class and applying it to all remaining tokens to stem them.
 
